@@ -39,19 +39,18 @@ def add_bg_from_url():
 add_bg_from_url()
 
 if choice=="Initialize":
-    image="1.png"
+    st.image("1.png")
 elif choice =="Status":
-    image="2.png"
+    st.image("2.png")
 elif choice =="Stage":
-    image="4.png"
+    st.image("4.png")
 elif choice =="Log":
-    image="3.png"
+    st.image("3.png")
 elif choice=="Add Origin":
-    image="5.png"
+    st.image("5.png")
 elif choice=="Commit":
-    image="6.png"
+    st.image("6.png")
 elif choice=="Push Code":
-    image="7.png"
+    st.image("7.png")
 elif choice=="Remove Origin":
-    image="8.png"
-st.image(image)
+    st.image("8.png")
