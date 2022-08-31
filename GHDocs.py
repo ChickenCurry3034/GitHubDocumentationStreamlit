@@ -3,7 +3,7 @@ st.set_page_config(layout="wide")
 from PIL import Image
 
 st.title('GitHub Docs by Aarush')
-choice = st.selectbox("Pick the following Git Commands!",["Initialize","Status","Log","Stage","Add Origin","Commit","Push Code","Pull Code","Remove Origin","Reset"])
+choice = st.selectbox("Pick the following Git Commands!",["Initialize","Status","Log","Stage","Add Origin","Commit","Push Code","Pull Code","Remove Origin","Revert"])
 dict = { "Initialize" : ["git init","This should be the first command after accessing the folder through git bash. With this command, git will be initialized in the folder."],
          "Status" : ["git status","With this command, the user can access what files are ready for the committing stage and what files still need to be staged."],
          "Log" : ["git log","With this command, the commit history of the files in the folder are shown."],
@@ -13,7 +13,7 @@ dict = { "Initialize" : ["git init","This should be the first command after acce
          "Push Code" : ["git push origin main","This command allows a user to push their code into their git repository."],
          "Pull Code" : ["git pull origin main","This command allows a user to pull some code from a repository with the permission of the original owner of the GitHub repository."],
          "Remove Origin" : ["git remote remove origin","This command allows the user to remove the existing origin."],
-         "Reset" : ["git reset <file>","This command allows the user to reset a certain file to its previous version."]
+         "Revert" : ["git revert <commit ID>","This command allows the user to revert the git repository to the version based on its commit ID."]
          }
 st.subheader("Code of the command selected:")
 st.code(dict[choice][0])
@@ -54,3 +54,5 @@ elif choice=="Push Code":
     st.image("7.png")
 elif choice=="Remove Origin":
     st.image("8.png")
+elif choice=="Pull Code":
+    st.image("9.png")
