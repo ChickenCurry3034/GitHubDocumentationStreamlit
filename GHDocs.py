@@ -2,7 +2,7 @@ import streamlit as st
 st.set_page_config(layout="wide")
 from PIL import Image
 
-st.title('GitHub Docs by Aarush')
+st.title('GitHub Docs by Aarush Mane')
 choice = st.selectbox("Pick the following Git Commands!",["Initialize","Status","Log","Stage","Add Origin","Commit","Push Code","Pull Code","Remove Origin","Revert"])
 dict = { "Initialize" : ["git init","This should be the first command after accessing the folder through git bash. With this command, git will be initialized in the folder."],
          "Status" : ["git status","With this command, the user can access what files are ready for the committing stage and what files still need to be staged."],
